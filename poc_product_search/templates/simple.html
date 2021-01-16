@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Product Comparision Details</title>
+<h2>All Prices are in AED</h2>
+<div class=page>
+  <h1></h1>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
